@@ -38,6 +38,78 @@ menu {
     overflow: auto;
 }
 
+/*Player-bar*/ 
+    .player-bar {
+        display: flex;
+        height: 80px;
+        padding: 10px;
+        justify-content: space-between;
+        background-color: #282828;
+    }
+
+    .container-fixed {
+        width: 225px;
+        padding: 10px; 
+    }
+
+    .container {
+        width: 50%; 
+        padding: 10px 0px; 
+    }
+
+    .icons {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icon {
+        font-size: 18px;
+        color: white;
+    }
+
+    .icon-big {
+        font-size: 24px; 
+        padding: 0 10px;
+    }
+
+    /*Slider*/
+
+    .slider {
+        padding: 5px 0; 
+        display: flex;
+        align-items: center;
+    }
+
+    .slide-container{
+        flex-grow: 1; 
+        position: relative; 
+    }
+
+    .time {
+        width: 15px; 
+        font-size: 8px;
+        color: white;
+        margin-left: 4px; 
+        margin-right: 4px; 
+    }
+
+    .slide {
+        height: 3px;
+        border-radius: 3px;
+    }
+
+    .slide-gray {
+        background-color: #5a5a5a;
+    }
+
+    .slide-white {
+        background-color: white;
+        position: absolute; 
+        width: 25%; 
+    }
+
 
 /*utility classes*/
 
@@ -84,8 +156,16 @@ menu {
     height: 50px;
 }
 
-.debug .aside {
-    background-color: aquamarine;
+.debug .icons {
+    background-color: brown;
+}
+
+.debug .container {
+    background-color: beige;
+}
+
+.debug .container-fixed {
+    background-color: black;
 }
 
 .debug .main-content {

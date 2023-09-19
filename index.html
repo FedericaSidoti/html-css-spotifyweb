@@ -5,15 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify Web</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/a095a4bfbe.js" crossorigin="anonymous"></script>
 </head>
-<body class="debug body">
+<body class="debu body">
     <div class="main-container">
         <aside class="aside"></aside>
         <main class="main-content">
-            <header></header>
-            <body></body>
+            <header class="app-header"></header>
+            <body class="app-body"></body>
         </main>
     </div>
-    <div class="player-bar"></div>
+    <div class="player-bar">
+        <div class="container-fixed"></div>
+        <div class="container">
+            <div class="icons">
+                <div class="icon"><i class="fa-solid fa-shuffle"></i></div>
+                <div class="icon"><i class="fa-solid fa-backward-step"></i></div>
+                <div class="icon icon-big"><i class="fa-regular fa-circle-play"></i></div>
+                <div class="icon"><i class="fa-solid fa-forward-step"></i></div>
+                <div class="icon"><i class="fa-solid fa-rotate-right"></i></div>
+            </div>
+            <div class="slider">
+                <span class="time">0.25</span>
+                <div class="slide-container">
+                    <div class="slide slide-white"></div>
+                    <div class="slide slide-gray"></div>
+                </div>
+                <span class="time">4.35</span>
+            </div>
+        </div>
+        <div class="container-fixed"></div>
+    </div>
 </body>
 </html>
