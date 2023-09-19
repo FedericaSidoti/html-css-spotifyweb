@@ -45,6 +45,30 @@ menu {
     display: none; 
 }
 
+/***Media Query***/
+
+/*S- small devices*/
+
+@media (min-width: 768px) {
+
+    .aside {
+        width: 230px;
+    }
+
+}
+
+/*M- medium devices*/
+
+@media (min-width: 992px) {
+    
+}
+
+/*L-large devices*/
+
+@media (min-width: 1200px) {
+    
+}
+
 /****DEBUG****/
 .debug {
     background-color: blue;
