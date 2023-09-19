@@ -78,6 +78,10 @@ menu {
         padding: 0 10px;
     }
 
+    .icon-big:hover {
+        transform: scale(1.2);
+    }
+
     /*Slider*/
 
     .slider {
@@ -138,6 +142,14 @@ menu {
 
     /*fine slider*/
 
+    .player-icons {
+        margin-left: 10px; 
+    }
+
+    .icon-gray:hover {
+        color: white; 
+    }
+
     .player-img {
         max-width: 30px; 
         display: block;
@@ -146,6 +158,10 @@ menu {
     .player-title {
         color: white; 
         font-size: 12px; 
+    }
+
+    .icon-gray {
+        color: gray;
     }
 
     .player-text {
@@ -183,12 +199,21 @@ menu {
         width: 230px;
     }
 
+    /*Player-bar*/
+    .text-container {
+        display: flex;
+        gap: 5px; 
+    }
+
 }
 
 /*M- medium devices*/
 
 @media (min-width: 992px) {
-    
+    .player-icons {
+        display: flex;
+        gap: 5px; 
+    }
 }
 
 /*L-large devices*/
