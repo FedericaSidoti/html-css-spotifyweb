@@ -48,8 +48,12 @@ menu {
     }
 
     .container-fixed {
-        width: 225px;
+        width: 160px;
         padding: 10px; 
+        display: flex; 
+        align-items: center;
+        gap: 10px; 
+        flex-shrink: 0;
     }
 
     .container {
@@ -85,6 +89,7 @@ menu {
     .slide-container{
         flex-grow: 1; 
         position: relative; 
+        padding: 5px 0; 
     }
 
     .time {
@@ -110,6 +115,54 @@ menu {
         width: 25%; 
     }
 
+    .command {
+        height: 12px; 
+        width: 12px; 
+        background-color: white;
+        border-radius: 8px; 
+        display: none;
+        position: absolute;
+        top: 0px; 
+        left: 25%; 
+    }
+
+    .slide-container:hover .command {
+    display: inline-block;
+    }
+
+    .slide-container:hover .slide-white {
+        background-color: limegreen;
+    }
+
+
+
+    /*fine slider*/
+
+    .player-img {
+        max-width: 30px; 
+        display: block;
+    }
+
+    .player-title {
+        color: white; 
+        font-size: 12px; 
+    }
+
+    .player-text {
+        color: gray; 
+        font-size: 10px; 
+    }
+
+    .container-fixed .slide-container {
+        width: 30%; 
+        flex-grow: 0; 
+    }
+
+    .icon-small {
+        font-size: 12px; 
+    }
+
+
 
 /*utility classes*/
 
@@ -117,6 +170,9 @@ menu {
     display: none; 
 }
 
+.flex-end {
+    justify-content: flex-end;
+}
 /***Media Query***/
 
 /*S- small devices*/
