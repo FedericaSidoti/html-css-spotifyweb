@@ -15,3 +15,55 @@ ol,
 menu {
     list-style: none;
 }
+
+/*Layout macroaree*/
+.body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container {
+    flex-grow: 1;
+    display: flex; 
+}
+
+.aside {
+    width: 50px;
+    flex-shrink: 0;
+}
+
+.main-content {
+    flex-grow: 1;
+    overflow: auto;
+}
+
+
+/*utility classes*/
+
+.d-none {
+    display: none; 
+}
+
+/****DEBUG****/
+.debug {
+    background-color: blue;
+}
+
+.debug .main-container {
+    background-color: red;
+}
+
+.debug .player-bar {
+    background-color: aqua;
+    border: 1px solid rebeccapurple; 
+    height: 50px;
+}
+
+.debug .aside {
+    background-color: aquamarine;
+}
+
+.debug .main-content {
+    background-color: orange;
+}
