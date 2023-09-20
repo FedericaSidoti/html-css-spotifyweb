@@ -16,6 +16,10 @@ menu {
     list-style: none;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 /*Variabili*/
 :root {
     --trackplayer: 25% ;
@@ -205,18 +209,31 @@ menu {
     /*Aside*/
 
 
-    .aside-icon img {
+    .aside-icon img, .logo-small {
     width: 25px; 
+    }
+
+    .aside-img, .icon-round  {
+        margin-right: 10px; ;
     }
 
     .img-small {
         width: 15px; 
     }
 
-    .icons-container {
+    .icons-container, .logo-container {
         display: flex;
         flex-direction: column; 
         align-items: center;
+    }
+
+    .logo-container {
+        padding: 15px 0; 
+    }
+
+    .icons-container {
+        gap: 15px; 
+        padding: 0 10px; 
     }
 
     .icon-round{
@@ -241,6 +258,10 @@ menu {
         color: white; 
         font-size: 20px; 
         font-weight: 700;
+    }
+
+    .logo-big {
+        width: 134px; 
     }
 
 
@@ -280,15 +301,27 @@ menu {
         width: 230px;
     }
 
+    .d-none {
+        display: inline-block;
+    }
+
     /*Player-bar*/
     .text-container {
         display: flex;
         gap: 5px; 
     }
 
+    .logo-small {
+        display: none; 
+    }
+ 
 }
 
 /*M- medium devices*/
+
+.d-none {
+    display: inline-block;
+}
 
 @media (min-width: 992px) {
     .player-icons {
@@ -313,7 +346,7 @@ menu {
         padding: 0 20px; 
     }
 
-    .aside-icon {
+    .aside-icon, .aside-logo {
         display: flex;
         align-items: center;
         width: 100%;
