@@ -56,12 +56,10 @@ a {
 
 .main-content {
     flex-grow: 1;
-    overflow: auto;
 }
 
 .container-fluid {
     max-width: 100%;
-    margin: 0 10px; 
 }
 
 .row {
@@ -335,6 +333,8 @@ a {
 
     .main-content {
         background-color: #141922;
+        overflow-y: auto;
+        overflow-x: hidden;
     }
 
     /*App-header*/
@@ -345,6 +345,7 @@ a {
         align-items: center;
         justify-content: flex-end;
         margin-right: 20px;
+        width: 100%;
     }
 
     .button {
@@ -355,6 +356,9 @@ a {
         border-radius: 15px;
         display: inline-block;
     }
+
+    /*App-body*/
+
 
     .navbar {
         display: flex;
@@ -437,6 +441,13 @@ a {
         display: inline-block;
     }
 
+    .aside-icon, .aside-logo {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+    }
+
 }
 
 /*M- medium devices*/
@@ -455,6 +466,13 @@ a {
 .col {
     flex-basis: calc((100% / 12) * 3);  
     padding: 8px; 
+}
+
+.aside-icon, .aside-logo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
 }
 
 }
