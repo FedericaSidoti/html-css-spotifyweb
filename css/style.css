@@ -20,6 +20,11 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+a {
+    color: currentColor;
+    text-decoration: none;
+}
+
 /*Variabili*/
 :root {
     --trackplayer: 25% ;
@@ -52,6 +57,21 @@ body {
 .main-content {
     flex-grow: 1;
     overflow: auto;
+}
+
+.container-fluid {
+    max-width: 100%;
+    margin: 0 10px; 
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    flex-basis: calc((100% / 12) * 6);
+    padding: 5px; 
 }
 
 /*Player-bar*/ 
@@ -334,7 +354,24 @@ body {
         padding: 3px 25px; 
         border-radius: 15px;
         display: inline-block;
+    }
 
+    .navbar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        column-gap: 15px;
+        row-gap: 30px; 
+        padding: 10px 0; 
+    }
+
+    .section-title {
+        color: white;
+        font-weight: 900;
+        margin-left: 5px;
+        padding: 10px 0;
+        font-size: 40px;
     }
 
 
@@ -399,20 +436,27 @@ body {
     .img-small::after {
         display: inline-block;
     }
- 
+
 }
 
 /*M- medium devices*/
+
+@media (min-width: 992px) {
+
+    .player-icons {
+        display: flex;
+        gap: 5px; 
+    }
 
 .d-none {
     display: inline-block;
 }
 
-@media (min-width: 992px) {
-    .player-icons {
-        display: flex;
-        gap: 5px; 
-    }
+.col {
+    flex-basis: calc((100% / 12) * 3);  
+    padding: 8px; 
+}
+
 }
 
 /*L-large devices*/
@@ -436,6 +480,11 @@ body {
 
     .container-fixed {
         width: 229px; 
+    }
+
+    .col {
+        flex-basis: calc((100% / 12) * 2); 
+        padding: 10px; 
     }
 }
 
