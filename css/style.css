@@ -50,7 +50,7 @@ menu {
     .player-bar {
         display: flex;
         height: auto;
-        padding: 20px 0;
+        padding: 10px 0;
         justify-content: space-between;
         background-color: #282828; 
     }
