@@ -16,6 +16,12 @@ menu {
     list-style: none;
 }
 
+/*Variabili*/
+:root {
+    --trackplayer: 25% ;
+    --trackaudio: 40% ; 
+}
+
 /*Layout macroaree*/
 .body {
     height: 100vh;
@@ -36,7 +42,6 @@ menu {
     background-color: black;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     overflow: hidden;
 }
 
@@ -123,7 +128,12 @@ menu {
     .slide-white {
         background-color: white;
         position: absolute; 
-        width: 25%; 
+        width: var(--trackplayer)
+    }
+    .slide-white-audio {
+        background-color: white;
+        position: absolute; 
+        width: var(--trackaudio)
     }
 
     .command {
@@ -134,13 +144,14 @@ menu {
         display: none;
         position: absolute;
         top: 0px; 
-        left: 25%; 
+        left: var(--trackplayer); 
     }
 
     .command-small {
         height: 6px;
         width: 6px;
         top: -1px; 
+        left: var(--trackaudio);
     }
 
     .slide-container:hover .command {
@@ -237,6 +248,10 @@ menu {
 
 .d-none {
     display: none; 
+}
+
+.margin-top-auto {
+    margin-top: auto;
 }
 
 .flex-end {
