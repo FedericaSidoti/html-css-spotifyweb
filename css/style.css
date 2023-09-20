@@ -213,12 +213,22 @@ body {
     width: 25px; 
     }
 
-    .aside-img, .icon-round  {
-        margin-right: 10px; ;
+    .text, .text-title  {
+        margin-left: 10px; ;
     }
 
     .img-small {
         width: 15px; 
+    }
+
+    .img-small::after {
+        content: "";
+        height: 1px; 
+        width: 100%;
+        background-color: gray;
+        margin-top: 10px;
+        display: none;
+
     }
 
     .icons-container, .logo-container {
@@ -233,7 +243,12 @@ body {
 
     .icons-container {
         gap: 15px; 
-        padding: 0 10px; 
+        padding: 10px; 
+        margin-bottom: 10px;
+    }
+
+    .icons-container:last-child {
+        gap: 30px; 
     }
 
     .icon-round{
@@ -250,7 +265,7 @@ body {
     }
 
     .text {
-        color: white; 
+        color: gray; 
         font-size: 16px; 
     }
 
@@ -264,10 +279,42 @@ body {
         width: 134px; 
     }
 
+    /*Playlists*/
+
+    .playlists-container {
+        padding: 10px; 
+    }
+
+    .list-item .text {
+        padding: 5px 0; 
+    }
+
+    .text-big {
+        color: gray;
+        font-size: 20px;
+    }
+
+    .new-playlist {
+        display: flex;
+        padding: 10px; 
+        align-items: center;
+    }
+
+    .new-button {
+        font-size: 35px; 
+        color: black;
+        background-color: #a3a3a3;
+        padding: 0px 18px; 
+        display: inline-block;
+        font-weight: 900;
+        line-height: 1.5;
+        margin-right: 8px; 
+    }
+
 
 /*utility classes*/
 
-.d-none {
+.body .d-none {
     display: none; 
 }
 
@@ -290,6 +337,10 @@ body {
     align-items: center;
 }
 
+.upper-text {
+    text-transform: uppercase;
+}
+
 
 /***Media Query***/
 
@@ -297,12 +348,12 @@ body {
 
 @media (min-width: 768px) {
 
-    .aside {
-        width: 230px;
+    .body .d-none {
+        display: inline-block;
     }
 
-    .d-none {
-        display: inline-block;
+    .aside {
+        width: 230px;
     }
 
     /*Player-bar*/
@@ -313,6 +364,14 @@ body {
 
     .logo-small {
         display: none; 
+    }
+
+    .icons-container:last-child {
+        gap: 15px; 
+    }
+
+    .img-small::after {
+        display: inline-block;
     }
  
 }
@@ -342,12 +401,9 @@ body {
         text-align: left;
     }
 
-    .aside {
-        padding: 0 20px; 
-    }
-
     .aside-icon, .aside-logo {
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         width: 100%;
     }
