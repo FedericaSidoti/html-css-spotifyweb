@@ -21,11 +21,13 @@ menu {
     height: 100vh;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .main-container {
     flex-grow: 1;
     display: flex; 
+    overflow: hidden; 
 }
 
 .aside {
@@ -35,16 +37,13 @@ menu {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow: hidden;
 }
 
 .main-content {
     flex-grow: 1;
     overflow: auto;
 }
-
-/*Aside*/
-
-
 
 /*Player-bar*/ 
     .player-bar {
@@ -194,7 +193,8 @@ menu {
 
     /*Aside*/
 
-    .aside-icon {
+
+    .aside-icon img {
     width: 25px; 
     }
 
@@ -219,6 +219,17 @@ menu {
         aspect-ratio: 1;
         width: 25px; 
         object-fit: contain;
+    }
+
+    .text {
+        color: white; 
+        font-size: 16px; 
+    }
+
+    .text-title {
+        color: white; 
+        font-size: 20px; 
+        font-weight: 700;
     }
 
 
@@ -275,6 +286,24 @@ menu {
 
 @media (min-width: 1200px) {
     
+    .d-none {
+        display: inline-block;
+    }
+
+    .icons-container {
+        text-align: left;
+    }
+
+    .aside {
+        padding: 0 20px; 
+    }
+
+    .aside-icon {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
     .container-fixed {
         width: 229px; 
     }
