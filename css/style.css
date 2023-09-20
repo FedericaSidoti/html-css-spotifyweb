@@ -52,7 +52,7 @@ menu {
         height: auto;
         padding: 20px 0;
         justify-content: space-between;
-        background-color: #282828;
+        background-color: #282828; 
     }
 
     .container-fixed {
@@ -60,13 +60,12 @@ menu {
         padding: 10px; 
         display: flex; 
         align-items: center;
-        gap: 10px; 
         flex-shrink: 0;
     }
 
     .container {
         width: 50%; 
-        padding: 10px 0px; 
+        padding: 10px; 
     }
 
     .icons {
@@ -74,6 +73,7 @@ menu {
         gap: 15px;
         justify-content: center;
         align-items: center;
+        padding: 0 10px;
     }
 
     .icon {
@@ -138,6 +138,12 @@ menu {
         left: 25%; 
     }
 
+    .command-small {
+        height: 6px;
+        width: 6px;
+        top: -1px; 
+    }
+
     .slide-container:hover .command {
     display: inline-block;
     }
@@ -178,7 +184,7 @@ menu {
     }
 
     .container-fixed .slide-container {
-        width: 30%; 
+        width: 50%; 
         flex-grow: 0; 
     }
 
@@ -230,6 +236,13 @@ menu {
     padding: 0; 
 }
 
+.justify-between-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
 
 /***Media Query***/
 
@@ -262,6 +275,9 @@ menu {
 
 @media (min-width: 1200px) {
     
+    .container-fixed {
+        width: 229px; 
+    }
 }
 
 /****DEBUG****/
