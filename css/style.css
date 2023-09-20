@@ -311,6 +311,32 @@ body {
         margin-right: 8px; 
     }
 
+    /*Main*/
+
+    .main-content {
+        background-color: #141922;
+    }
+
+    /*App-header*/
+    .app-header {
+        height: 80px;
+        background-color: rgba( 0 , 0 , 0 , 0.5 );
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-right: 20px;
+    }
+
+    .button {
+        color:white; 
+        border: 1px solid white; 
+        line-height: 1.3em;
+        padding: 3px 25px; 
+        border-radius: 15px;
+        display: inline-block;
+
+    }
+
 
 /*utility classes*/
 
