@@ -72,6 +72,7 @@ a {
     padding: 5px; 
 }
 
+
 /*Player-bar*/ 
     .player-bar {
         display: flex;
@@ -346,6 +347,8 @@ a {
         justify-content: flex-end;
         margin-right: 20px;
         width: 100%;
+        position: sticky; 
+        top: 0; 
     }
 
     .button {
@@ -355,9 +358,14 @@ a {
         padding: 3px 25px; 
         border-radius: 15px;
         display: inline-block;
+        margin-right: 10px; 
     }
 
     /*App-body*/
+
+    .app-body {
+        padding: 5px; 
+    }
 
 
     .navbar {
@@ -367,7 +375,7 @@ a {
         align-items: center;
         column-gap: 15px;
         row-gap: 30px; 
-        padding: 10px 0; 
+        padding: 15px 10px; 
     }
 
     .section-title {
