@@ -65,6 +65,7 @@ a {
 .row {
     display: flex;
     flex-wrap: wrap;
+    padding: 5px 0; 
 }
 
 .col {
@@ -381,15 +382,36 @@ a {
     .section-title {
         color: white;
         font-weight: 900;
-        margin-left: 5px;
         padding: 10px 0;
-        font-size: 40px;
+        font-size: 25px;
+    }
+
+    .img-round {
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .card .text, .card .text-title {
+        text-align: center;
+        margin-left: 0; 
+    }
+
+    .row .text {
+        margin-left: 0; 
+    }
+
+    .created-container {
+        padding: 0 10px; 
+    }
+
+    .card img {
+        margin-bottom: 5px;
     }
 
 
 /*utility classes*/
 
-.body .d-none {
+.d-none {
     display: none; 
 }
 
@@ -483,6 +505,10 @@ a {
     width: 100%;
 }
 
+.section-title {
+    font-size: 32px;
+}
+
 }
 
 /*L-large devices*/
@@ -512,6 +538,13 @@ a {
         flex-basis: calc((100% / 12) * 2); 
         padding: 10px; 
     }
+
+    .section-title {
+        font-size: 40px;
+    }
+
+
+
 }
 
 /****DEBUG****/
