@@ -33,6 +33,7 @@ a {
     --lime: #adff2f; 
     --light: #d2d2d2; 
     --darkgray: #282828; 
+    --darkblue: #141922; 
 }
 
 /*Layout macroaree*/
@@ -322,7 +323,7 @@ a {
     /*Main*/
 
     .main-content {
-        background-color: var(--darkgray)
+        background-color: var(--darkblue);
         overflow: hidden;
     }
 
