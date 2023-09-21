@@ -56,6 +56,7 @@ a {
 
 .main-content {
     flex-grow: 1;
+    position: relative;
 }
 
 .container-fluid {
@@ -335,21 +336,25 @@ a {
 
     .main-content {
         background-color: #141922;
-        overflow-y: auto;
-        overflow-x: hidden;
+        overflow: hidden;
+    }
+
+    .app-body {
+        height: 100%;
+        overflow: auto;
     }
 
     /*App-header*/
     .app-header {
         height: 80px;
-        background-color: rgba( 0 , 0 , 0 , 0.5 );
+        background-color: rgba( 0 , 0 , 0 , 0.7 );
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        margin-right: 20px;
-        width: 100%;
-        position: sticky; 
+        position: absolute; 
         top: 0; 
+        left: 0; 
+        right: 0;
     }
 
     .button {
@@ -376,7 +381,7 @@ a {
         align-items: center;
         column-gap: 15px;
         row-gap: 30px; 
-        padding: 15px 10px; 
+        padding: 115px 10px 15px 10px; 
     }
 
     .section-title {
