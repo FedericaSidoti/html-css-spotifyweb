@@ -113,6 +113,7 @@ a {
 
     .icon {
         font-size: 18px;
+        color: var(--light);
     }
 
     .icon-big {
