@@ -290,6 +290,10 @@ a {
         font-size: 16px; 
     }
 
+    .light-text {
+        color: #d2d2d2; 
+    }
+
     .text-title {
         color: white; 
         font-size: 20px; 
@@ -298,6 +302,14 @@ a {
 
     .logo-big {
         width: 134px; 
+    }
+
+    .aside-icon {
+        position: relative;
+    }
+
+    .aside-img {
+        opacity: 0.7;
     }
 
     /*Playlists*/
@@ -384,6 +396,10 @@ a {
         padding: 115px 10px 15px 10px; 
     }
 
+    .navbar .list-item {
+        position: relative;
+    }
+
     .section-title {
         color: white;
         font-weight: 900;
@@ -412,6 +428,36 @@ a {
     .card img {
         margin-bottom: 5px;
     }
+
+/* Hover and Active*/
+
+.icon.active::before {
+    content: "";
+    width: 4px; 
+    height: 25px; 
+    background-color: aquamarine;
+    position: absolute; 
+    top: 0; 
+    left: -5px; 
+}
+
+.upper-text.active::after {
+    content: "";
+    width: 40px;
+    height: 4px;
+    background-color: aquamarine;
+    position: absolute; 
+    bottom: -5px; 
+    left: 30px; 
+}
+
+.aside-icon:hover .aside-img {
+    opacity: 1;
+}
+
+.aside-icon:hover .d-none.text {
+    color: white;
+}
 
 
 /*utility classes*/
