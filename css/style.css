@@ -410,6 +410,12 @@ a {
         margin-bottom: 5px;
     }
 
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
 /* Hover and Active*/
 
 .icon.active::before {
