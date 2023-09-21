@@ -29,6 +29,10 @@ a {
 :root {
     --trackplayer: 25% ;
     --trackaudio: 40% ; 
+    --gray: #7d7f84; 
+    --lime: #adff2f; 
+    --light: #d2d2d2; 
+    --darkgray: #282828; 
 }
 
 /*Layout macroaree*/
@@ -82,7 +86,7 @@ a {
         height: auto;
         padding: 10px 0;
         justify-content: space-between;
-        background-color: #282828; 
+        background-color: var(--darkgray); 
     }
 
     .container-fixed {
@@ -108,17 +112,12 @@ a {
 
     .icon {
         font-size: 18px;
-        color: white;
     }
 
     .icon-big {
         font-size: 24px; 
         padding: 0 10px;
-    }
-
-    .icon-big:hover {
-        transform: scale(1.2);
-    }
+    } 
 
     /*Slider*/
 
@@ -148,7 +147,7 @@ a {
     }
 
     .slide-gray {
-        background-color: #5a5a5a;
+        background-color: var(--gray);
     }
 
     .slide-white {
@@ -180,24 +179,10 @@ a {
         left: var(--trackaudio);
     }
 
-    .slide-container:hover .command {
-    display: inline-block;
-    }
-
-    .slide-container:hover .slide-white {
-        background-color: limegreen;
-    }
-
-
-
     /*fine slider*/
 
     .player-icons {
         margin-left: 10px; 
-    }
-
-    .icon-gray:hover {
-        color: white; 
     }
 
     .player-img {
@@ -211,11 +196,11 @@ a {
     }
 
     .icon-gray {
-        color: gray;
+        color: var(--gray);
     }
 
     .player-text {
-        color: gray; 
+        color: var(--gray); 
         font-size: 10px; 
     }
 
@@ -230,7 +215,6 @@ a {
 
     /*Aside*/
 
-
     .aside-icon img, .logo-small {
     width: 25px; 
     }
@@ -241,15 +225,6 @@ a {
 
     .img-small {
         width: 15px; 
-    }
-
-    .img-small::after {
-        content: "";
-        height: 1px; 
-        width: 100%;
-        background-color: gray;
-        margin-top: 10px;
-        display: none;
     }
 
     .icons-container, .logo-container {
@@ -273,7 +248,7 @@ a {
     }
 
     .icon-round{
-    background-color: gray;
+    background-color: var(--gray);
     border-radius: 25px;
     overflow: hidden;
     }
@@ -286,12 +261,12 @@ a {
     }
 
     .text {
-        color: gray; 
+        color: var(--gray); 
         font-size: 16px; 
     }
 
     .light-text {
-        color: #d2d2d2; 
+        color: var(--light); 
     }
 
     .text-title {
@@ -323,7 +298,7 @@ a {
     }
 
     .text-big {
-        color: gray;
+        color: var(--gray);
         font-size: 20px;
     }
 
@@ -336,7 +311,7 @@ a {
     .new-button {
         font-size: 35px; 
         color: black;
-        background-color: #a3a3a3;
+        background-color: var(--gray);
         padding: 0px 18px; 
         display: inline-block;
         font-weight: 900;
@@ -347,7 +322,7 @@ a {
     /*Main*/
 
     .main-content {
-        background-color: #141922;
+        background-color: var(--darkgray)
         overflow: hidden;
     }
 
@@ -439,7 +414,7 @@ a {
     content: "";
     width: 4px; 
     height: 25px; 
-    background-color: aquamarine;
+    background-color: var(--lime);
     position: absolute; 
     top: 0; 
     left: -10px; 
@@ -449,7 +424,7 @@ a {
     content: "";
     width: 40px;
     height: 4px;
-    background-color: aquamarine;
+    background-color: var(--lime);
     position: absolute; 
     bottom: -5px; 
     left: 30px; 
@@ -508,6 +483,31 @@ a {
 .button:hover {
     transform: scale(1.1);
 }
+
+.slide-container:hover .command {
+    display: inline-block;
+    }
+
+    .slide-container:hover .slide-white {
+        background-color: var(--lime);
+    }
+
+    .icon-big:hover {
+        transform: scale(1.2);
+    }
+
+    .icon-gray:hover {
+        color: white; 
+    }
+
+    .img-small::after {
+        content: "";
+        height: 1px; 
+        width: 100%;
+        background-color: var(--gray);
+        margin-top: 10px;
+        display: none;
+    }
 
 
 /*utility classes*/
